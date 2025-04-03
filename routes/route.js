@@ -5,7 +5,7 @@ const { signIn, signUp } = require("../Controllers/users");
 
 const { Auth } = require("../middlewares/Auth");
 
-router.post("/signUp", signUp);
-router.post("/signIn", signIn);
+router.use("/signUp", signUp);
+router.use("/signIn", signIn);
 
 module.exports = router;
