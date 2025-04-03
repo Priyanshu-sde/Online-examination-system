@@ -65,7 +65,7 @@ exports.signIn= async (req, res) => {
         })
     }
 
-if(await bcrypt.compare(user.password,password)){
+if(bcrypt.compare(user.password,password)){
 
 const payload={
     email:user.email,
