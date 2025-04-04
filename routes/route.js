@@ -7,7 +7,7 @@ const {
     findUser
 } = require("../Controllers/users");
 
-const { Auth } = require("../midddlewares/Auth");
+const { Auth } = require("../middlewares/Auth");
 
 router.post("/signUp", signUp);
 router.get("/signIn", signIn);

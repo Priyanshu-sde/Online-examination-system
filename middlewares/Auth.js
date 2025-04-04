@@ -14,7 +14,7 @@ exports.auth=async(req ,res,next)=>{
 
          try{
 
-            const decode=jwt.verify(token,process.eve.JWT_SECRET);
+            const decode=jwt.verify(token,process.env.JWT_SECRET);
             req.user=decode;
 
          }
