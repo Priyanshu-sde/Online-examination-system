@@ -6,8 +6,6 @@ const database = require("./config/database.js");
 const exam  = require("./routes/exam.js");
 const result=require("./routes/result.js");
 
-
-
 const app = express();
 
 app.use(express.json());
